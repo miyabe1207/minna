@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use DateTime;
 
-class PostSeeder extends Seeder
+class SymptomSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,12 +16,8 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('posts')->insert([
-                'disease_name' => '病名１',
-                'symptoms_id' => 1,
-                'therapeutic_method' => '治療法１',
-                'hospital_name' => '病院名１',
-                'doctor_name' => '医師名１',
+        DB::table('symptoms')->insert([
+                'status' => "頭痛",
                 'created_at' => new DateTime(),
                 'updated_at' => new DateTime(),
          ]);
