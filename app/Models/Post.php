@@ -25,6 +25,6 @@ class Post extends Model
     
     public function symptoms()
     {
-        return $this->belongsTo(symptoms::class);
+        return $this->belongsTo(Symptom::class);
     }
 }
